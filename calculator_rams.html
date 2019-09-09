@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>calculator.html</title>
+</head>
+<style>
+	
+body{
+	height: 900px;
+	background-image: linear-gradient(#c9c8c8, #737071);
+	}	
+	
+#myCalculator{
+	position: fixed;
+	background-color: #D8DACE;
+	width: 340px;
+	height: 510px;
+	margin-bottom: 9px;
+	margin-left: 40%;
+	border-radius: 10px;
+	
+	}	
+	
+#display{
+	width: 300px;
+	height: 80px;
+	margin-bottom: 10px;
+	border: thin, solid;
+	margin-left: 12px;
+	margin-top: 12px;
+	text-align: right;
+	font-size: 50px;
+	padding-right: 15px;
+	border-style: none;
+	border-radius: 7px;
+	color: #FCFFF2
+	
+}
+#display{
+		background-image:linear-gradient(#8D998E, #4D4D4D);
+	}
+
+input{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin: 8.5px;
+	color: #4E3026;
+	background-color: #D8DACE;
+	outline: 5px, solid;
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: 200;
+	font-size: 25px;
+	border-radius: 50px;
+	border-style: none;
+	text-align: center;
+}
+input:hover{
+		background-color: #C5C6B3;
+	}
+	
+.operator:hover{
+		background-color:#A5A695;
+	}
+	
+.inputRow{
+		margin-left: 9px;
+	}
+	
+#clear{
+	background-color: #D8DACE;
+	font-color: white;
+}
+#clear:hover{
+	background-color: #FF9248	
+	}	
+	
+#zero{
+	width: 60px;
+	}
+	
+p{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: 200;
+	font-size: 10px;
+	align: right;
+	text-align: right;
+	color: #4E3026;
+	display: inline-block;
+	margin-left: 75px;
+	
+	}
+</style>
+
+
+<body>
+<form name="calculator">
+	
+<div id="myCalculator">
+<div id="top_display">
+<input type="text" name="display" id="display" disabled>
+</div>
+
+<div class="inputRow" name="row1">
+	
+<input type="button" name="seven" value="7"
+	   onclick="calculator.display.value +='7'">
+	
+<input type="button" name="eight" value="8"
+	   onclick="calculator.display.value +='8'">
+	
+<input type="button" name="nine" value="9"
+	   onclick="calculator.display.value +='9'">
+	
+<input type="button" class="operator" name="divide" value="÷" id="operator"
+		onclick="calculator.display.value +='/'">
+	</div>
+	
+<div class="inputRow" name"row2">
+
+<input type="button" name="four" value="4"
+	   onclick="calculator.display.value +='4'">
+	
+<input type="button" name="five" value="5"
+	   onclick="calculator.display.value +='5'">
+	
+<input type="button" name="six" value="6"
+	   onclick="calculator.display.value +='6'">
+	
+	
+<input type="button" class="operator" name="multiply" value="x" id="operator"
+		onclick="calculator.display.value +='*'">
+</div>
+	
+<div class="inputRow" name="row3">
+	
+<input type="button" name="one" value="1"
+	   onclick="calculator.display.value +='1'">
+	
+<input type="button" name="two" value="2"
+	   onclick="calculator.display.value +='2'">
+	
+<input type="button" name="three" value="3"
+	   onclick="calculator.display.value +='3'">
+	
+<input type="button" class="operator" name="subtract" value="-" id="operator"
+		onclick="calculator.display.value +='-'">
+</div>
+	
+<div class="inputRow" name="row4">
+
+<input type="button" name="zero" value="0" id="zero"
+	   onclick="calculator.display.value +='0'">
+	
+<input type="button" name="decimal" value="."
+	   onclick="calculator.display.value +='.'">
+	
+<input type="button" class="operator" name="equals" value="=" id="operator"
+	   onclick="calculator.display.value
+		= eval(calculator.display.value)">
+	
+<input type="button" class="operator" name="add" value="+" id="operator"
+		onclick="calculator.display.value +='+'">
+	</div>
+
+<div class="inputRow" name="row5">
+	
+<input type="button" name="clear" value="C" id="clear"
+	   onclick="calculator.display.value =''">
+<p>HTML Calculator by Arturo Velazquez<br> Based on the work of Dieter Rams</p>
+	</div>
+	
+	
+</div>
+</form>		
+</body>
+</html>
