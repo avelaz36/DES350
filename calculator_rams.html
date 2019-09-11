@@ -7,33 +7,35 @@
 <style>
 	
 body{
-	height: 900px;
-	background-image: linear-gradient(#c9c8c8, #737071);
+	height: 850px;
+	background-image: linear-gradient(#C6C6BD, #737071);
 	}	
 	
 #myCalculator{
 	position: fixed;
 	background-color: #D8DACE;
 	width: 340px;
-	height: 510px;
+	height: 490px;
 	margin-bottom: 9px;
-	margin-left: 40%;
-	border-radius: 10px;
-	
+	border-radius: 7px;
+	margin-left: 38%;
 	}	
 	
 #display{
-	width: 300px;
+	width: 324px;
 	height: 80px;
 	margin-bottom: 10px;
 	border: thin, solid;
-	margin-left: 12px;
-	margin-top: 12px;
+	margin-left: 0px;
+	margin-top: 0px;
 	text-align: right;
 	font-size: 50px;
 	padding-right: 15px;
 	border-style: none;
-	border-radius: 7px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
 	color: #FCFFF2
 	
 }
@@ -59,10 +61,10 @@ input{
 input:hover{
 		background-color: #C5C6B3;
 	}
-	
-.operator:hover{
-		background-color:#A5A695;
-	}
+
+.operator{
+		color:#DE7834;
+	}	
 	
 .inputRow{
 		margin-left: 9px;
@@ -84,11 +86,10 @@ p{
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-weight: 200;
 	font-size: 10px;
-	align: right;
-	text-align: right;
+	text-align: left;
 	color: #4E3026;
 	display: inline-block;
-	margin-left: 75px;
+	margin-top: 20px;
 	
 	}
 </style>
@@ -168,9 +169,10 @@ p{
 	
 <input type="button" name="clear" value="C" id="clear"
 	   onclick="calculator.display.value =''">
-<p>HTML Calculator by Arturo Velazquez<br> Based on the work of Dieter Rams</p>
+
 	</div>
 	
+<p>HTML Calculator by Arturo Velazquez<br> Based on the work of Dieter Rams</p>
 	
 </div>
 </form>		
