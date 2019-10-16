@@ -1,0 +1,537 @@
+<!doctype html>
+<html>
+<head>
+	
+<style>
+	body{
+		background-color: #D1C5B2;
+	}
+	.face{ 
+		width: 385px;
+		height: 525px;
+		background-color: #D6A083;
+		border-radius: 50%;
+		position: absolute;
+		top: 100px;
+		left: 100px;
+		z-index: 0;
+
+	}
+	.chin{
+		width: 180px;
+		height: 135px;
+		background-color: #D6A083;
+		border-radius: 50%;
+		position: absolute;
+		top: 496px;
+		left: 200px;
+	}
+	
+	.leftear{
+		width: 84px;
+		height: 97px;
+		background-color: #D6A083;
+		border-radius: 50%;
+		position: absolute;
+		top: 340px;
+		left: 60px;
+		z-index: -2;
+	}
+	
+	.leftearlobe{
+		height: 35px;
+		width: 35px;
+		background-color: #D6A083;
+		border-radius: 50%;
+		position: absolute;
+		z-index: -2;
+		top: 418px;
+		left: 92px;
+	}
+	
+	.leftearin{
+		width: 50px;
+		height: 70px;
+		background-color: #C17A67;
+		border-radius: 50%;
+		position: absolute;
+		z-index: -1;
+		top: 354px;
+		left: 75px;
+	}
+	
+	.rightear{
+		width: 84px;
+		height: 97px;
+		background-color: #D6A083;
+		border-radius: 50%;
+		position: absolute;
+		top: 340px;
+		left: 440px;
+		z-index: -2;
+	}
+	
+	.rightearlobe{
+		height: 35px;
+		width: 35px;
+		background-color: #D6A083;
+		border-radius: 50%;
+		position: absolute;
+		z-index: -2;
+		top: 418px;
+		left: 458px;
+	}
+	
+	.rightearin{
+		width: 50px;
+		height: 70px;
+		background-color: #C17A67;
+		border-radius: 50%;
+		position: absolute;
+		z-index: -1;
+		top: 354px;
+		left: 459px;
+	}
+	.hat{
+		width: 410px;
+		height: 207.5px;
+		border-radius: 207.5px 207.5px 0 0;
+		background-color: #FFCE00;
+		z-index: 1;
+		position: absolute;
+		top: 90px;
+		left: 85px;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+
+	}
+	
+	.hatbrim{
+		width: 420px;
+		height: 100px;
+		background-color: #F2C300;
+		border-radius: 10px;
+		position: absolute;
+		top: 250px;
+		left: 80px;
+		z-index: 2;
+	}
+	
+	.leftlens{
+		width: 130px;
+		height: 125px;
+		background-color: rgba(255,255,255,.50);
+		position: absolute;
+		z-index: 4;
+		border-top-left-radius: 90px;
+		border-top-right-radius: 90px;
+		border-bottom-left-radius: 80%;
+		border-bottom-right-radius: 80%;
+		border-style: solid;
+		border-width: 5px;
+		border-color: #494949;
+		top: 310px;
+		left: 130px;
+	}
+	
+	
+	
+	.rightlens{
+		width: 130px;
+		height: 125px;
+		background-color: rgba(255,255,255,.50);
+		position: absolute;
+		z-index: 4;
+		border-top-left-radius: 90px;
+		border-top-right-radius: 90px;
+		border-bottom-left-radius: 80%;
+		border-bottom-right-radius: 80%;
+		border-style: solid;
+		border-width: 5px;
+		border-color: #494949;
+		top: 310px;
+		left: 315px;
+	}
+	
+	.bridge{
+		width: 67px;
+		height: 77px;
+		background-color: rgba(255,255,255,.00);
+		border-color: #494949;
+		border-width: 5px;
+		border-style: solid;
+		position: absolute;
+		border-radius: 50%;
+		top: 345px;
+		left: 254px;
+		z-index: 3;
+		border-bottom-right-radius: 1px;
+		border-bottom-left-radius: 1px;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		border-left-color: transparent;
+	}
+	
+	.lefteyeball{
+		width: 72px;
+		height: 36px;
+		border-radius:72px 72px 0px 0px;
+		background-color: white;
+		position: absolute;
+		top: 348px;
+		left: 163px;
+		z-index: 1;
+		
+	}
+	
+	.leftpupil{
+		height: 35px;
+		width: 35px;
+		background-color: #261B10;
+		position: absolute;
+		border-radius: 50%;
+		top: 355px;
+		left: 181px;
+		z-index: 2;
+		animation-name: eyes;
+		animation-duration: 5s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+	}
+	
+	.leftiris{
+		height: 15px;
+		width: 15px;
+		background-color: black;
+		position: absolute;
+		border-radius: 50%;
+		top: 365px;
+		left: 191px;
+		z-index: 2;
+		animation-name: eyes;
+		animation-duration: 5s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+	}
+	
+	.lefteyelid{
+		width: 72px;
+		height: 15px;
+		background-color: #C17A67;
+		position: absolute;
+		border-radius: 0px 0px 300px 300px;
+		top: 385px;
+		left: 163px;
+		z-index: 3;
+	}
+	
+	.righteyeball{
+		width: 72px;
+		height: 36px;
+		border-radius:72px 72px 0px 0px;
+		background-color: white;
+		position: absolute;
+		top: 348px;
+		left: 350px;
+		z-index: 1;
+
+	}
+	
+	.rightpupil{
+		height: 35px;
+		width: 35px;
+		background-color: #261B10;
+		position: absolute;
+		border-radius: 50%;
+		top: 355px;
+		left: 368px;
+		z-index: 2;
+		animation-name: eyes;
+		animation-duration: 5s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+	}
+	
+	.rightiris{
+		height: 15px;
+		width: 15px;
+		background-color: black;
+		position: absolute;
+		border-radius: 50%;
+		top: 365px;
+		left: 378px;
+		z-index: 2;
+		animation-name: eyes;
+		animation-duration: 5s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+	}
+	
+	.righteyelid{
+		width: 72px;
+		height: 15px;
+		background-color: #C17A67;
+		position: absolute;
+		border-radius: 0px 0px 300px 300px;
+		top: 385px;
+		left: 350px;
+		z-index: 3;
+		
+	}
+	
+	.nose1{
+		width: 35px;
+		height: 65px;
+		background-color: #CC8269;
+		position: absolute;
+		border-radius: 15px;
+		top: 390px;
+		left: 275px;
+	}
+	
+	.nose2{
+		width: 43px;
+		height: 15px;
+		background-color: #CC8269;
+		position: absolute;
+		border-radius: 7.5px;
+		top: 424px;
+		left: 271px;
+	}
+	.nose3{
+		width: 59px;
+		height: 23px;
+		background-color: #CC8269;
+		position: absolute;
+		border-radius: 11.5px;
+		top: 432px;
+		left: 263px;
+	}
+	
+	.lefteyebrow{
+		width: 110px;
+		height: 77px;
+		background-color: rgba(255,255,255,.00);
+		border-color: #261B10;
+		border-width: 5px;
+		border-style: solid;
+		position: absolute;
+		border-radius: 50%;
+		top: 330px;
+		left: 135px;
+		z-index: 3;
+		border-bottom-right-radius: 1px;
+		border-bottom-left-radius: 1px;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		border-left-color: transparent;
+		transform: rotate(-10deg);
+		animation-name: lefteyebrow;
+		animation-duration: 3.333s;
+		animation-delay: 5s;
+		animation-iteration-count: infinite;
+	}
+	
+	.righteyebrow{
+		width: 110px;
+		height: 77px;
+		background-color: rgba(255,255,255,.00);
+		border-color: #261B10;
+		border-width: 5px;
+		border-style: solid;
+		position: absolute;
+		border-radius: 50%;
+		top: 330px;
+		left: 328px;
+		z-index: 3;
+		border-bottom-right-radius: 1px;
+		border-bottom-left-radius: 1px;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		border-left-color: transparent;
+		transform: rotate(10deg);
+		animation-name: righteyebrow;
+		animation-duration: 3.333s;
+		animation-delay: 5s;
+		animation-iteration-count: infinite;
+	}
+	
+	.leftcheek{
+		width: 120px;
+		height: 50px;
+		background-color: rgba(255,255,255,.00);
+		border-color: #C17A67;
+		border-width: 4px;
+		border-style: solid;
+		position: absolute;
+		border-radius: 50%;
+		top: 500px;
+		left: 100px;
+		z-index: 3;
+		border-bottom-right-radius: 1px;
+		border-bottom-left-radius: 1px;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		border-left-color: transparent;
+		transform: rotate(60deg)
+	}
+	
+	.rightcheek{
+		width: 120px;
+		height: 50px;
+		background-color: rgba(255,255,255,.00);
+		border-color: #C17A67;
+		border-width: 4px;
+		border-style: solid;
+		position: absolute;
+		border-radius: 50%;
+		top: 500px;
+		left: 348px;
+		z-index: 3;
+		border-bottom-right-radius: 1px;
+		border-bottom-left-radius: 1px;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		border-left-color: transparent;
+		transform: rotate(-60deg)
+	}
+	
+	.upperlipleft{
+		width: 60px;
+		height: 10px;
+		background-color: #CC8269;
+		position: absolute;
+		border-radius: 100% 0px 0px 0px;
+		top: 505px;
+		left: 232px;
+		
+    }
+	
+	.upperlipright{
+		width: 60px;
+		height: 10px;
+		background-color: #CC8269;
+		position: absolute;
+		border-radius: 0px 100% 0px 0px;
+		top: 505px;
+		left: 292px;
+		
+    }
+	
+	.bottomlipleft{
+		width: 60px;
+		height: 19px;
+		background-color: #CC8269;
+		position: absolute;
+		border-radius: 0px 0px 0px 100%;
+		top: 515px;
+		left: 232px;
+		
+    }
+	
+	.bottomlipright{
+		width: 60px;
+		height: 19px;
+		background-color: #CC8269;
+		position: absolute;
+		border-radius: 0px 0px 100% 0px;
+		top: 515px;
+		left: 292px;
+    }
+	
+	.smile{
+		width: 118px;
+		height: 20px;
+		background-color: rgba(255,255,255,.00);
+		border-color: #C17A67;
+		border-width: 3px;
+		border-style: solid;
+		position: absolute;
+		border-radius: 50%;
+		top: 497px;
+		left: 230px;
+		z-index: 3;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-left-color: transparent;
+	}
+	
+	@-webkit-keyframes eyes {
+		
+		0%{transform: translateX(0px) }
+		
+		33%{transform: translateX(-13px)}
+		
+		66%{transform: translateX(13px)}
+		
+		100%{transform:translateX(0px)}
+		
+		
+	}
+	
+	@-webkit-keyframes lefteyebrow {
+		
+		0%{transform: rotate(-10deg);
+		}
+		
+		50%{transform: rotate(-20deg);
+		}
+		
+		100%{transform: rotate(-10deg);
+		}
+	}
+	
+	@-webkit-keyframes righteyebrow {
+		
+		0%{transform: rotate(10deg);
+		}
+		
+		50%{transform: rotate(20deg);
+		}
+		
+		100%{transform: rotate(10deg);
+		}
+	}
+</style>
+<meta charset="UTF-8">
+<title>Self Portrait</title>
+</head>
+
+<body>
+<div class="face"></div>
+<div class="chin"></div>
+<div class="leftear"></div>
+<div class="leftearlobe"></div>
+<div class="leftearin"></div>
+<div class="rightear"></div>
+<div class="rightearlobe"></div>
+<div class="rightearin"></div>
+<div class="leftlens"></div>
+<div class="bridge"></div>
+<div class="rightlens"></div>
+<div class="hat"></div>
+<div class="hatbrim"></div>
+<div class="lefteyeball"></div>
+<div class="leftpupil"></div>
+<div class="leftiris"></div>
+<div class="lefteyelid"></div>
+<div class="lefteyebrow"></div>
+<div class="righteyeball"></div>
+<div class="rightpupil"></div>
+<div class="rightiris"></div>
+<div class="righteyelid"></div>
+<div class="righteyebrow"></div>
+<div class="nose1"></div>
+<div class="nose2"></div>
+<div class="nose3"></div>
+<div class="leftcheek"></div>
+<div class="rightcheek"></div>
+<div class="upperlipleft"></div>
+<div class="upperlipright"></div>
+<div class="bottomlipleft"></div>
+<div class="bottomlipright"></div>
+<div class="smile"></div>
+</body>
+</html>
