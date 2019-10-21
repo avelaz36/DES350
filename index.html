@@ -13,22 +13,38 @@
 		}
 		
 		body{
-			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
 			font-color: black;
 			background-color:#D1C5B2;
 			margin-left: 5%;
-			margin-top: 2.5%;
 			height: 200%;
 			background-repeat: repeat-x 2;
 		}
 		
 		h1{
-			font-size: 24px;
+			font-size: 100px;
+			margin-left: 45%;
+			position: absolute;
+			font-weight: 100;
+			line-height: 120px;
+			top: 70px;
+			
 		}
-		h2{
+		
+		.links{
+			margin-top: 150px;
+		}
+		#category{
 			margin-bottom: 10px;
-			font-size: 24px;
+			font-size: 40px;
 			font-weight: 700;
+			margin-left: 0%;
+			line-height: 60px;
+			top: 0px;
+		}
+		
+		#subcategory{
+			line-height: 10px;
 		}
 		
 		.h21:hover{
@@ -48,8 +64,7 @@
 		a{
 			color: black;
 			text-decoration-line: none;
-			margin-left: 20px;
-			font-size: 20px;
+			font-size: 24px;
 			line-height: 35px;
 			font-weight: 200;
 		}
@@ -71,11 +86,12 @@
 		#aboutme{
 			position: absolute;
 			left: 5px;
-			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
 			color: transparent;
 			margin: 0% 5% 10px 5%;
-			height: 900px;
+			height: 850px;
 			line-height: 30px;
+			font-size: 15px;
 		}
 		.hi{
 			color: black;
@@ -101,29 +117,29 @@
 
 <body>
 	<div class="top" id="top">
-	<h1><strong>Arturo Velazquez / DES350</strong><br></h1>
+	<h1><strong>Arturo Velazquez</strong><br>DES350<br></h1>
+	<div class="links">
 	<div id="calculator">
-	<h2 class="h21"><b>Calculators</b></h2>
-	<a href="calculator.html" class="a1">CSS Calculator</a><br>
-	<a href="calculator_rams.html"class="a2">Dieter Rams Inspired Calculator</a><br>
+	<a href="calculator.html" class="a1" id="category"><b>Calculator</b></h2><br>
+	<a href="calculator_rams.html"class="a2" id="subcategory">Dieter Rams Inspired Calculator</a><br>
 	</div>
 	
 	<div id="Principles of Design">
-	<h2 class="h22"><b>Principles of design</b></h2>
-	<a href="principlesofdesign.html"class="a1">Dieter Rams Essay</a><br>
-	<a href="principlesofdesignv2.html"class="a2">Dieter Rams Poster</a><br>
-	<a href="principlesofdesignv3.html"class="a3">Dieter Rams Poster Version 2</a><br>
+	<a href="principlesofdesignv2.html"class="a2" id="category"><b>Principles of design</b></h2><br>
+	<a href="principlesofdesignv3.html"class="a1" id="subcategory">Version 2</a><br>
 	</div>
 	
 	<div id="portrait">
-	<h2 class="h23"><b>Self Portrait</b></h2>
-	<a href="portrait.html"class="a1">Self Portrait Animated</a><br>
+	<a href="portrait.html"class="a3" id="category"><b>Self Portrait</b></h2>
 	</div>
 	
 	<div id="portfolios">
-	<h2 class="h21"><b>Portfolios</b></h2>
-	<a href="portfolioexamples.html"class="a1">Portfolio Examples</a><br>
+	<a href="portfolioexamples.html"class="a1" id="category"><b>Portfolios</b></h2>
 	</div>
+	<div id="final">
+	<a href="" class="a2" id="category"><b>Final</b></h2>
+	</div>
+	</div>	
 	</div>
 	<div class="bottom" id="bottom">
 	<div id="aboutme">
