@@ -2,14 +2,56 @@
 <html>
 <head>
 	<style>
+		#top{
+			min-height: 750px;
+			height: 50%;
+		}
+		
+		#bottom{
+			min-height: 900px;
+			height: 100%;
+		}
+		
 		body{
 			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 			font-color: black;
 			background-color:#D1C5B2;
+			margin-left: 5%;
+			margin-top: 2.5%;
+			height: 200%;
+			background-repeat: repeat-x 2;
 		}
+		
+		h1{
+			font-size: 24px;
+		}
+		h2{
+			margin-bottom: 10px;
+			font-size: 24px;
+			font-weight: 700;
+		}
+		
+		.h21:hover{
+			color: cyan;
+			transition-duration: .5s;
+		}
+		
+		.h22:hover{
+			color: magenta;
+			transition-duration: .5s;
+		}
+		.h23:hover{
+			color: yellow;
+			transition-duration: .5s;
+		}
+		
 		a{
 			color: black;
 			text-decoration-line: none;
+			margin-left: 20px;
+			font-size: 20px;
+			line-height: 35px;
+			font-weight: 200;
 		}
 		
 		.a1:hover{
@@ -25,22 +67,71 @@
 			color: yellow;
 			transition-duration: .5s;
 		}
+		
+		#aboutme{
+			position: absolute;
+			left: 5px;
+			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			color: transparent;
+			margin: 0% 5% 10px 5%;
+			height: 900px;
+			line-height: 30px;
+		}
+		.hi{
+			color: black;
+			font-size: 100px;
+			margin-bottom: 10px;
+			line-height: normal;
+		}
+		#aboutme:hover{
+			color: black;
+			transition-duration: 1s;
+			
+		}
+		.why{
+			position: absolute;
+			bottom: 0px;
+			font-size: 8px;
+			
+		}
 	</style>
 <meta charset="UTF-8">
 <title>Arturo Velazquez / DES350</title>
 </head>
 
 <body>
-	<strong><i>Arturo Velazquez / DES350</i></strong><br>
+	<div class="top" id="top">
+	<h1><strong>Arturo Velazquez / DES350</strong><br></h1>
+	<div id="calculator">
+	<h2 class="h21"><b>Calculators</b></h2>
 	<a href="calculator.html" class="a1">CSS Calculator</a><br>
-	<a href="principlesofdesign.html"class="a2">Dieter Rams Essay</a><br>
-	<a href="rams_essay_poster.jpg"class="a3">DieterRamsPoster.jpg</a><br>
-	<a href="principlesofdesignv2.html"class="a1">Dieter Rams Poster</a><br>
-	<a href="principlesofdesignv3.html"class="a2">Dieter Rams Poster Version 2</a><br>
-	<a href="rams_moodboard.jpg"class="a3">Dieter Rams Moodboard</a><br>
-	<a href="rams_calculator.jpg"class="a1">Dieter Rams Inspired Calculator Design</a><br>
 	<a href="calculator_rams.html"class="a2">Dieter Rams Inspired Calculator</a><br>
-	<a href="portrait.html"class="a3">Self Portrait Animated</a><br>
-	<a href="portfolioexamples.html"class="a1">Portfolio Examples</a>
+	</div>
+	
+	<div id="Principles of Design">
+	<h2 class="h22"><b>Principles of design</b></h2>
+	<a href="principlesofdesign.html"class="a1">Dieter Rams Essay</a><br>
+	<a href="principlesofdesignv2.html"class="a2">Dieter Rams Poster</a><br>
+	<a href="principlesofdesignv3.html"class="a3">Dieter Rams Poster Version 2</a><br>
+	</div>
+	
+	<div id="portrait">
+	<h2 class="h23"><b>Self Portrait</b></h2>
+	<a href="portrait.html"class="a1">Self Portrait Animated</a><br>
+	</div>
+	
+	<div id="portfolios">
+	<h2 class="h21"><b>Portfolios</b></h2>
+	<a href="portfolioexamples.html"class="a1">Portfolio Examples</a><br>
+	</div>
+	</div>
+	<div class="bottom" id="bottom">
+	<div id="aboutme">
+	<h2 class="hi">howdy.</h2>
+	<p class="aboutme">this website is designed for projects in Digital Media Design IV.<br>i'm a student in graphic design with a minor in art focusing on photography.<br> that's about it, you can stop reading this now.</p>
+	<p class="why">why are you looking this far down? go back up to the important things.</p>
+	</div>
+	</div>
+	
 </body>
 </html>
