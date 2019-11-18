@@ -6,20 +6,15 @@
 		font-family: Helvetica, Arial, "sans-serif";
 		margin-left: 19.5%;
 		margin-right: 19.5%;
-		margin-top: 0px;
-		height: 2000px;
-		background-image: linear-gradient(to bottom, #A8C4CF, #C5AC96, #F15A3E, #494B4A)
-	}
-	.toprule{
-		top: 0px;
-		margin-left: -39%;
-		width: 171%;
-		height: 60px;
-		background-color: black;
+		margin-top: -2%;
+		height: 3500px;
+		background-image: linear-gradient(to bottom, #A8C4CF, #C5AC96, #F15A3E, #494B4A);
+		background-repeat: no-repeat;
+		
 	}
 	
 	h1{
-		font-size: 173px;
+		font-size: 192px;
 		letter-spacing: -9px;
 		font-weight: 900;
 		line-height: 21px;
@@ -32,11 +27,13 @@
 	}
 	
 	.visit{
-		margin-top: 85px;
+		margin-top: 0px;
 		margin-bottom: -30px;
 	}
+	
 	#thegreat{
 		color: #FDDC0D;
+		margin-bottom: 125px;
 	}
 	
 	#smoky{
@@ -48,6 +45,52 @@
 		float: right;
 		margin-top: -10px;
 	}
+	
+	h3{
+		font-size: 40px;
+		font-weight: 600;
+		line-height: 0px;
+		color:antiquewhite
+	}
+	
+	p{
+		font-weight: 300;
+		font-size: 22px;
+		color:antiquewhite
+	}
+	
+	.info{
+		margin-top: 400px;
+		margin-bottom: 150px;
+	}
+	
+	.activityright{
+		width: 60%;
+		float: left;
+		margin-left: 35.33%;
+		text-align: left;
+		margin-bottom: 50px;
+		
+	}
+	
+	.activityleft{
+		width: 60%;
+		float: left;
+		text-align: left;
+		margin-bottom: 50px;
+	}
+	
+	.visit{
+		float: left;
+		width: 100%;
+	}
+	
+	img{
+		position: absolute;
+		width: 100.1%;
+		left: -1px;
+		margin-top: 2000px;
+	}
 	</style>
 	
 <meta charset="UTF-8">
@@ -55,19 +98,53 @@
 </head>
 
 <body>
-	<div class="toprule"></div>
 	<div class="visit">
-		<h2>Visit</h2>
-		<h2 id="thegreat" class="rellax" data-rellax-speed=-2>The Great</h2>
+		<h2 class= "rellax" data-rellax-speed= 1>Visit</h2>
+		<h2 id="thegreat" class="rellax" data-rellax-speed=-3>The Great</h2>
 	</div>
 	
 	<div class="title">
-		<h1 id="smoky" class="rellax" data-rellax-speed= -2>Smoky</h1>
-		<h1 class="rellax" data-rellax-speed= -0>Mountains</h1>
+		<h1 id="smoky" class="rellax" data-rellax-speed= -4>Smoky</h1>
+		<h1 class="rellax" data-rellax-speed= -1.5>Mountains</h1>
 	</div>
 
-	<h2 id="nationalpark">National Park</h2>
+	<h2 id="nationalpark" class= "rellax" data-rellax-speed= 7>National Park</h2>
+
+	<div class="info">
+		<h3>Established in 1934</h3>
+		<p>The Great Smoky Mountain National Park is a 522,427 acre large subrange of the Appalachian Mountain Range located along the border of Tennessee and North Carolina, and is the most visited national park in the United States. Named after the natural fog that rolls throughout the range, the Smokies have many beautiful sights to see. With several miles of trails and streams, various campsites, and many miles of road to drive through the park there's plenty to explore.</p>
+	</div>
+
+	<div class="activityright">
+		<h3>Camping</h3>
+		<p>There are 1000 campsites across 10 campgrounds within the park, and more than 100 backcountry campsites, leaving plenty of places to spend a night in the mountains.</p>
+	</div>
+
+	<div class="activityleft">
+		<h3>Fishing</h3>
+		<p>Visitors may choose from many places to fish throughout the Great Smoky Mountains. With 67 unique species of fish throughout 730 miles of fish-bearing streams and 1300 miles of tributaries, there are many fish to be caught.</p>
+	</div>
 	
+	<div class="activityright">
+		<h3>Hiking</h3>
+		<p>There are over 850 miles of hiking trails in the park, and a variety to choose from. From mountain views, to waterfalls, forests, and flora, there’s something to see along many hikes in the Smokies</p>
+	</div>
+
+	<div class="activityleft">
+		<h3>Wildlife</h3>
+		<p>From mammals to fish, there’s plenty of beautiful wildlife to see in the mountains. With the largest black bear population on the eastern side of the Mississippi, you’re sure to run into something exciting in the Great Smoky Mountains.</p>
+	</div>
+	
+	<div class="activityright">
+		<h3>History</h3>
+		<p>With a rich history dating back to before the Civil War and a variety of historical buildings throughout the park, there's plenty of history to learn while in the Great Smoky Mountains National Park.</p>
+	</div>
+
+	<div class="visit">
+		<p>To plan a visit and learn more about the Great Smoky Mountains National Park, check out the official website at <a href="https://www.nps.gov/grsm">nps.gov/grsm</a></p>
+	</div>
+
+	<img src="mountains.svg" alt="mountains"/>
 	
 		<!-- javascript by Dixon and Moe: https://dixonandmoe/rellax-->
 	<script type="text/javascript" src="rellax.js"></script>
