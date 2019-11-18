@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	body{
+		font-family: Helvetica, Arial, "sans-serif";
+		margin-left: 19.5%;
+		margin-right: 19.5%;
+		margin-top: 0px;
+		height: 2000px;
+		background-image: linear-gradient(to bottom, #A8C4CF, #C5AC96, #F15A3E, #494B4A)
+	}
+	.toprule{
+		top: 0px;
+		margin-left: -39%;
+		width: 171%;
+		height: 60px;
+		background-color: black;
+	}
+	
+	h1{
+		font-size: 173px;
+		letter-spacing: -9px;
+		font-weight: 900;
+		line-height: 21px;
+		color: #FDDC0D;
+	}
+	
+	h2{
+		font-size: 60px;
+		line-height: 20px;
+	}
+	
+	.visit{
+		margin-top: 85px;
+		margin-bottom: -30px;
+	}
+	#thegreat{
+		color: #FDDC0D;
+	}
+	
+	#smoky{
+		letter-spacing: -11.5px;
+	}
+	
+	#nationalpark{
+		text-align: right;
+		float: right;
+		margin-top: -10px;
+	}
+	</style>
+	
+<meta charset="UTF-8">
+<title>The Great Smoky Mountains</title>
+</head>
+
+<body>
+	<div class="toprule"></div>
+	<div class="visit">
+		<h2>Visit</h2>
+		<h2 id="thegreat" class="rellax" data-rellax-speed=-2>The Great</h2>
+	</div>
+	
+	<div class="title">
+		<h1 id="smoky" class="rellax" data-rellax-speed= -2>Smoky</h1>
+		<h1 class="rellax" data-rellax-speed= -0>Mountains</h1>
+	</div>
+
+	<h2 id="nationalpark">National Park</h2>
+	
+	
+		<!-- javascript by Dixon and Moe: https://dixonandmoe/rellax-->
+	<script type="text/javascript" src="rellax.js"></script>
+    <script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+</body>
+</html>
