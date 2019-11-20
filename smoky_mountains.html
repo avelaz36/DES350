@@ -6,7 +6,7 @@
 		font-family: Helvetica, Arial, "sans-serif";
 		margin-left: 19.5%;
 		margin-right: 19.5%;
-		margin-top: -2%;
+		margin-top: 2%;
 		height: 3500px;
 		background-image: linear-gradient(to bottom, #A8C4CF, #C5AC96, #F15A3E, #494B4A);
 		background-repeat: no-repeat;
@@ -27,7 +27,7 @@
 	}
 	
 	.visit{
-		margin-top: 0px;
+		margin-top: 150px;
 		margin-bottom: -30px;
 	}
 	
@@ -49,8 +49,9 @@
 	h3{
 		font-size: 40px;
 		font-weight: 600;
-		line-height: 0px;
-		color:antiquewhite
+		line-height: 3px;
+		color:antiquewhite;
+		margin-bottom: 15px;
 	}
 	
 	p{
@@ -62,6 +63,12 @@
 	.info{
 		margin-top: 400px;
 		margin-bottom: 150px;
+		border: solid;
+		border-color: antiquewhite;
+		border-width: 2px;
+		width: 96%;
+		padding-left: 2%;
+		padding-right: 2%;
 	}
 	
 	.activityright{
@@ -80,9 +87,20 @@
 		margin-bottom: 50px;
 	}
 	
-	.visit{
+	.call{
 		float: left;
-		width: 100%;
+		width: 96%;
+		border: solid;
+		border-color: antiquewhite;
+		border-width: 2px;
+		text-align: center;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	
+	a{
+		color: antiquewhite;
+		text-decoration: underline;
 	}
 	
 	img{
@@ -90,6 +108,31 @@
 		width: 100.1%;
 		left: -1px;
 		margin-top: 2000px;
+	}
+	
+	.poster{
+		width: 30.66%;
+		position: relative;
+		margin: 2% 1.11% 2% 1.11%;
+		left: auto;
+		
+	}
+	
+	.parks{
+		width: 98%;
+		border: solid;
+		border-color: antiquewhite;
+		border-width: 2px;
+		padding-top: 0px;
+		float: left;
+		margin-bottom: 5%;
+		margin-top: 7%;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+	
+	#parks{
+		text-align: center;
 	}
 	</style>
 	
@@ -104,7 +147,7 @@
 	</div>
 	
 	<div class="title">
-		<h1 id="smoky" class="rellax" data-rellax-speed= -4>Smoky</h1>
+		<h1 id="smoky" class="rellax" data-rellax-speed= -3.5>Smoky</h1>
 		<h1 class="rellax" data-rellax-speed= -1.5>Mountains</h1>
 	</div>
 
@@ -140,7 +183,14 @@
 		<p>With a rich history dating back to before the Civil War and a variety of historical buildings throughout the park, there's plenty of history to learn while in the Great Smoky Mountains National Park.</p>
 	</div>
 
-	<div class="visit">
+	<div class="parks">
+		<h3 id="parks">Learn more about other National Parks!</h3>
+		<img src="np_poster2.jpg" class="poster">
+		<img src="np_poster2.jpg" class="poster">
+		<img src="np_poster2.jpg" class="poster">
+	</div>
+
+	<div class="call">
 		<p>To plan a visit and learn more about the Great Smoky Mountains National Park, check out the official website at <a href="https://www.nps.gov/grsm">nps.gov/grsm</a></p>
 	</div>
 
