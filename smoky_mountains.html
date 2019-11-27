@@ -76,7 +76,7 @@
 		float: left;
 		margin-left: 35.33%;
 		text-align: left;
-		margin-bottom: 50px;
+		margin-bottom: 100px;
 		
 	}
 	
@@ -84,18 +84,48 @@
 		width: 60%;
 		float: left;
 		text-align: left;
-		margin-bottom: 50px;
+		margin-bottom: 100px;
+		margin-left: 24%;
+	}
+	
+	.iconleft{
+		float: left;
+		position: absolute;
+		width: 8%;
+		margin-top: 23px;
+		margin-left: -10%;
+	}
+	
+	.iconright{
+		float: left;
+		position: absolute;
+		margin-top: 23px;
+		width: 8%;
+		margin-left: -10%;
+	}
+	
+	.icon{
+		float: left;
+		position: absolute;
+		margin-top: 23px;
+		width: 8%;
+		margin-left: 4.5%;
 	}
 	
 	.call{
 		float: left;
-		width: 96%;
-		border: solid;
-		border-color: antiquewhite;
-		border-width: 2px;
-		text-align: center;
-		padding-left: 2%;
-		padding-right: 2%;
+		width: 100%;
+		text-align: left;
+		margin-bottom: 100px;
+
+	}
+	#visit{
+		line-height: normal;
+		color: #FDDC0D;
+		margin-left: 24%;
+		margin-top: 5%;
+		margin-bottom: 0%;
+		
 	}
 	
 	a{
@@ -103,11 +133,11 @@
 		text-decoration: underline;
 	}
 	
-	img{
+	.mountains{
 		position: absolute;
 		width: 100.1%;
 		left: -1px;
-		margin-top: 2000px;
+		margin-top: 2100px;
 	}
 	
 	.poster{
@@ -155,34 +185,44 @@
 
 	<div class="info">
 		<h3>Established in 1934</h3>
-		<p>The Great Smoky Mountain National Park is a 522,427 acre large subrange of the Appalachian Mountain Range located along the border of Tennessee and North Carolina, and is the most visited national park in the United States. Named after the natural fog that rolls throughout the range, the Smokies have many beautiful sights to see. With several miles of trails and streams, various campsites, and many miles of road to drive through the park there's plenty to explore.</p>
+		<p>The Great Smoky Mountains National Park is a 522,427 acre large subrange of the Appalachian Mountains located along the border of Tennessee and North Carolina, and is the most visited national park in the United States. Named after the natural fog that rolls throughout the range, the Smokies have many beautiful sights to see. With several miles of trails, streams, and roads, there's plenty to explore in the Great Smoky Mountains National Park.</p>
 	</div>
 
 	<div class="activityright">
+		<img src="camping.svg" class="iconright"/>
 		<h3>Camping</h3>
-		<p>There are 1000 campsites across 10 campgrounds within the park, and more than 100 backcountry campsites, leaving plenty of places to spend a night in the mountains.</p>
+		<p>There are plenty of places to camp across 1000 campsites in 10 campgrounds, and more than 100 backcountry campsites.</p>
 	</div>
 
 	<div class="activityleft">
+		<img src="fishing.svg" class="iconleft"/>
 		<h3>Fishing</h3>
-		<p>Visitors may choose from many places to fish throughout the Great Smoky Mountains. With 67 unique species of fish throughout 730 miles of fish-bearing streams and 1300 miles of tributaries, there are many fish to be caught.</p>
+		<p>With 67 unique species of fish throughout 730 miles of fish-bearing streams and 1300 miles of tributaries, there are plenty fish to catch.</p>
 	</div>
 	
 	<div class="activityright">
+		<img src="hiking.svg" class="iconright"/>
 		<h3>Hiking</h3>
-		<p>There are over 850 miles of hiking trails in the park, and a variety to choose from. From mountain views, to waterfalls, forests, and flora, there’s something to see along many hikes in the Smokies</p>
+		<p>From mountain views, to waterfalls, forests, and flora, there’s something to see along many hikes in the Smoky Mountains.</p>
 	</div>
 
 	<div class="activityleft">
+		<img src="wildlife.svg" class="iconleft"/>
 		<h3>Wildlife</h3>
-		<p>From mammals to fish, there’s plenty of beautiful wildlife to see in the mountains. With the largest black bear population on the eastern side of the Mississippi, you’re sure to run into something exciting in the Great Smoky Mountains.</p>
+		<p>From mammals to fish, there’s plenty of beautiful wildlife to see in the mountains. With the largest black bear population on the eastern side of the </p>
 	</div>
 	
 	<div class="activityright">
-		<h3>History</h3>
-		<p>With a rich history dating back to before the Civil War and a variety of historical buildings throughout the park, there's plenty of history to learn while in the Great Smoky Mountains National Park.</p>
+		<img src="history.svg" class="iconright"/>
+	  <h3>History</h3>
+		<p>With many historical buildings throughout the park, there's a rich history with plenty to learn dating back to before the Civil War.</p>
 	</div>
-
+	
+	<div class="call">
+		<img src="nationalparks.svg" class="icon"/>
+		<h3 id="visit">Visit and learn more information about the park at <a href="https://www.nps.gov/grsm">nps.gov/grsm</a></h3>
+	</div>
+	
 	<div class="parks">
 		<h3 id="parks">Learn more about other National Parks!</h3>
 		<img src="np_poster2.jpg" class="poster">
@@ -190,11 +230,9 @@
 		<img src="np_poster2.jpg" class="poster">
 	</div>
 
-	<div class="call">
-		<p>To plan a visit and learn more about the Great Smoky Mountains National Park, check out the official website at <a href="https://www.nps.gov/grsm">nps.gov/grsm</a></p>
-	</div>
 
-	<img src="mountains.svg" alt="mountains"/>
+
+	<img src="mountains.svg" alt="mountains" class="mountains"/>
 	
 		<!-- javascript by Dixon and Moe: https://dixonandmoe/rellax-->
 	<script type="text/javascript" src="rellax.js"></script>
