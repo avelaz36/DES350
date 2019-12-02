@@ -91,7 +91,7 @@
 	.iconleft{
 		float: left;
 		position: absolute;
-		width: 8%;
+		width: 113px;
 		margin-top: 23px;
 		margin-left: -10%;
 	}
@@ -100,7 +100,7 @@
 		float: left;
 		position: absolute;
 		margin-top: 23px;
-		width: 8%;
+		width: 113px;
 		margin-left: -10%;
 	}
 	
@@ -112,27 +112,29 @@
 		margin-left: 4.5%;
 	}
 	
-	.call{
-		float: left;
-		width: 100%;
-		text-align: left;
-		margin-bottom: 100px;
-
-	}
-	#visit{
+	a{
+		text-decoration: none;
+		text-align: center;
+		color: antiquewhite;		
+		font-size: 40px;
 		line-height: normal;
-		color: #FDDC0D;
-		margin-left: 24%;
-		margin-top: 5%;
-		margin-bottom: 0%;
+		float: left;
+		border: solid;
+		border-color: antiquewhite;
+		border-width: 4px;
+		width: 40%;
+		margin-left: 30%;
+		margin-right: 30%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	a:hover{
+		transition-duration: .25s;
+		transform: translateX(-1.5px) translateY(-3px);
+		box-shadow: 5px 7px 10px 0px rgba(0, 0, 0, .5);
 		
 	}
-	
-	a{
-		color: antiquewhite;
-		text-decoration: underline;
-	}
-	
 	.mountains{
 		position: absolute;
 		width: 100.1%;
@@ -140,29 +142,153 @@
 		margin-top: 2100px;
 	}
 	
-	.poster{
-		width: 30.66%;
-		position: relative;
-		margin: 2% 1.11% 2% 1.11%;
-		left: auto;
+	.posterleft{
+		display: inline-block;
+		width: 31%;
+		padding-right: 2%;
+		float: left;
+		margin: 25px auto 25px auto;
 		
 	}
 	
+	.postermid{
+		display: inline-block;
+		width: 31%;
+		padding-right: 2%;
+		float: left;
+		margin: 25px auto 25px auto;
+	}
+	
+	.posterright{
+		display: inline-block;
+		width: 31%;
+		padding-right: 2%;
+		float: left;
+		margin: 25px auto 25px auto;
+	}
+	
 	.parks{
-		width: 98%;
+		width: 97%;
 		border: solid;
 		border-color: antiquewhite;
 		border-width: 2px;
 		padding-top: 0px;
+		padding-left: 3%;
 		float: left;
 		margin-bottom: 5%;
-		margin-top: 7%;
-		padding-left: 1%;
-		padding-right: 1%;
+		margin-top: 150px;
 	}
 	
 	#parks{
 		text-align: center;
+		margin-left: -3%; 
+	}
+	
+	@media only screen and (min-width: 0px) and (max-width: 750px){
+		body{
+			margin-left: 9.5%;
+			margin-right: 9.5%;
+			height: 4000px;
+			
+		}
+		
+		h1{
+			font-size: 67px;
+			letter-spacing: -6px;
+			line-height: 10px;
+		}
+		
+		h2{
+			font-size: 35px;
+			line-height: 10px;
+		}
+		
+		#thegreat{
+			margin-bottom: 65px;
+		}
+		#smoky{
+			letter-spacing: -7.1px;
+		}
+		
+		h3{
+			font-size: 25px;
+			line-height: 3px;
+			
+		}
+		
+		p{
+			font-size: 18px;
+		}
+		
+		.info{
+			width: 90%;
+			padding-left: 5%;
+			padding-right: 5%;
+			margin-top: 300px;
+		}
+		
+		.activityleft{
+			width: 100%;
+			margin-left: auto;
+			margin-bottom: 200px;
+		}
+		
+		.activityright{
+			width: 100%;
+			float: left;
+			margin-left: auto;
+			margin-bottom: 200px;
+			text-align: right;
+		}
+		.iconleft{
+			width: 90px;
+			margin-left: auto;
+			margin-top: -90px;
+		}
+		
+		.iconright{
+			width: 90px;
+			margin-left: -90px;
+			margin-top: -90px;
+		}
+		
+		a{
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.posterleft{
+			display: inline-block;
+			width: 97%;
+			padding-right: 2%;
+			float: left;
+			margin: 25px auto 25px auto;
+		
+	}
+	
+		.postermid{
+			display: inline-block;
+			width: 97%;
+			padding-right: 2%;
+			float: left;
+			margin: 25px auto 25px auto;
+	}
+	
+		.posterright{
+			display: inline-block;
+			width: 97%;
+			padding-right: 2%;
+			float: left;
+			margin: 25px auto 25px auto;
+	}
+		#parks{
+			line-height: 20px;
+		}
+		
+		.mountains{
+			margin-top: 3600px;
+		}
 	}
 	</style>
 	
@@ -209,7 +335,7 @@
 	<div class="activityleft">
 		<img src="wildlife.svg" class="iconleft"/>
 		<h3>Wildlife</h3>
-		<p>From mammals to fish, there’s plenty of beautiful wildlife to see in the mountains. With the largest black bear population on the eastern side of the </p>
+		<p>With the largest black bear population on the eastern side of the Mississippi and a variety of species, you're sure to see something amazing.</p>
 	</div>
 	
 	<div class="activityright">
@@ -218,16 +344,24 @@
 		<p>With many historical buildings throughout the park, there's a rich history with plenty to learn dating back to before the Civil War.</p>
 	</div>
 	
-	<div class="call">
-		<img src="nationalparks.svg" class="icon"/>
-		<h3 id="visit">Visit and learn more information about the park at <a href="https://www.nps.gov/grsm">nps.gov/grsm</a></h3>
-	</div>
+
+	<h4 id="visit"><a href="https://www.nps.gov/grsm">Plan a visit and learn more!</a></h4>
+
 	
 	<div class="parks">
 		<h3 id="parks">Learn more about other National Parks!</h3>
-		<img src="np_poster2.jpg" class="poster">
-		<img src="np_poster2.jpg" class="poster">
-		<img src="np_poster2.jpg" class="poster">
+		
+		<div class="posterleft">
+			<img src="np_poster2.jpg" width="100%" class="poster">
+		</div>
+		
+		<div class="postermid">
+			<img src="np_poster2.jpg" width="100%" class="poster">
+		</div>
+		
+		<div class="posterright">
+			<img src="np_poster2.jpg" width="100%" class="poster">
+		</div>
 	</div>
 
 
