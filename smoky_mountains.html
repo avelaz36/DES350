@@ -112,7 +112,7 @@
 		margin-left: 4.5%;
 	}
 	
-	a{
+	.call{
 		text-decoration: none;
 		text-align: center;
 		color: antiquewhite;		
@@ -129,7 +129,7 @@
 		padding-bottom: 20px;
 	}
 
-	a:hover{
+	.call:hover{
 		transition-duration: .25s;
 		transform: translateX(-1.5px) translateY(-3px);
 		box-shadow: 5px 7px 10px 0px rgba(0, 0, 0, .5);
@@ -184,16 +184,16 @@
 		margin-left: -3%; 
 	}
 	
-	@media only screen and (min-width: 0px) and (max-width: 1000px){
+@media only screen and (min-width: 0px) and (max-width: 750px){
 		body{
 			margin-left: 9.5%;
 			margin-right: 9.5%;
-			height: 4000px;
+			height: 5600px;
 			
 		}
 		
 		h1{
-			font-size: 67px;
+			font-size: 100px;
 			letter-spacing: -6px;
 			line-height: 10px;
 		}
@@ -252,10 +252,120 @@
 			margin-top: -90px;
 		}
 		
-		a{
+		.call{
 			width: 100%;
 			margin-left: auto;
 			margin-right: auto;
+		}
+		
+		.posterleft{
+			display: inline-block;
+			width: 97%;
+			padding-right: 2%;
+			float: left;
+			margin: 25px auto 25px auto;
+		
+	}
+	
+		.postermid{
+			display: inline-block;
+			width: 97%;
+			padding-right: 2%;
+			float: left;
+			margin: 25px auto 25px auto;
+	}
+	
+		.posterright{
+			display: inline-block;
+			width: 97%;
+			padding-right: 2%;
+			float: left;
+			margin: 25px auto 25px auto;
+	}
+		#parks{
+			line-height: 25px;
+		}
+		
+		.mountains{
+			margin-top: 4275px;
+		}
+		
+		
+	}
+	
+@media only screen and (min-width: 750px) and (max-width: 1000px){
+		body{
+			margin-left: 9.5%;
+			margin-right: 9.5%;
+			height: 7000px;
+			
+		}
+		
+		h1{
+			font-size: 140px;
+			letter-spacing: -6px;
+			line-height: 15px;
+		}
+		
+		h2{
+			font-size: 45px;
+			line-height: 10px;
+		}
+		
+		#thegreat{
+			margin-bottom: 65px;
+		}
+		#smoky{
+			letter-spacing: -7.1px;
+		}
+		
+		h3{
+			font-size: 35px;
+			line-height: 3px;
+			
+		}
+		
+		p{
+			font-size: 25px;
+		}
+		
+		.info{
+			width: 90%;
+			padding-left: 5%;
+			padding-right: 5%;
+			margin-top: 300px;
+		}
+		
+		.activityleft{
+			width: 70%;
+			margin-left: auto;
+			margin-bottom: 200px;
+		}
+		
+		.activityright{
+			width: 70%;
+			float: left;
+			margin-left: 30%;
+			margin-bottom: 200px;
+			text-align: right;
+		}
+		.iconleft{
+			width: 90px;
+			margin-left: auto;
+			margin-top: -90px;
+		}
+		
+		.iconright{
+			width: 90px;
+			margin-left: -90px;
+			margin-top: -90px;
+		}
+		
+		.call{
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 50px;
 		}
 		
 		.posterleft{
@@ -287,8 +397,10 @@
 		}
 		
 		.mountains{
-			margin-top: 3600px;
+			margin-top: 5650px;
 		}
+		
+		
 	}
 	</style>
 	
@@ -345,22 +457,53 @@
 	</div>
 	
 
-	<h4 id="visit"><a href="https://www.nps.gov/grsm">Plan a visit and learn more!</a></h4>
+	<h4 id="visit"><a href="https://www.nps.gov/grsm" class="call">Plan a visit and learn more!</a></h4>
 
 	
 	<div class="parks">
 		<h3 id="parks">Learn more about other National Parks!</h3>
 		
 		<div class="posterleft">
-			<img src="np_poster2.jpg" width="100%" class="poster">
+			<script type="text/javascript">
+				var total_images = 5;
+				var random_number = Math.floor((Math.random()*total_images));
+				var random_img = new Array();
+				random_img[0] = '<a href="page1.html"><img src="https://vweiss4.github.io/DES350/poster-2.gif" width="100%"></a>';
+				random_img[1] = '<a href="page2.html"><img src="https://avelaz36.github.io/DES350/np_poster.gif" width="100%"></a>';
+				random_img[2] = '<a href="page3.html"><img src="https://lpark25.github.io/DES350/Comp-1_1.gif" width="100%"></a>';
+				random_img[3] = '<a href="page4.html"><img src="https://zali30.github.io/DES350/web/photo/posterM.gif" width="100%"></a>';
+				random_img[4] = '<a href="page5.html"><img src="https://anhvyb.github.io/DES350/posterRRRb%203_1.gif" width="100%"></a>';
+				random_img[5] = '<a href=“page6.html"><img src="https://snguye44.github.io/DES350/natureposterfinal.gif" width="100%"></a>';
+				document.write(random_img[random_number]);
+</script>
 		</div>
 		
 		<div class="postermid">
-			<img src="np_poster2.jpg" width="100%" class="poster">
+			<script type="text/javascript">
+				var total_images = 4;
+				var random_number = Math.floor((Math.random()*total_images));
+				var random_img = new Array();
+				random_img[0] = '<a href="page1.html"><img src="https://kdirnb2.github.io/DES350/newposter.gif" width="100%"></a>';
+				random_img[1] = '<a href="page2.html"><img src="https://tmfriese.github.io/DES350/Comp-1_4.gif" width="100%"></a>';
+				random_img[2] = '<a href="page3.html"><img src="https://agarc88.github.io/DES350/Mesa-Verde-Poster-1_1.gif" width="100%"></a>';
+				random_img[3] = '<a href="page4.html"><img src="https://cgasid2.github.io/DES350/final-poster-animation-.gif" width="100%"></a>';
+				random_img[4] = '<a href="page5.html"><img src="https://dmejia11.github.io/DES350/Mejia_rocky.gif" width="100%"></a>';
+				document.write(random_img[random_number]);
+</script>
 		</div>
 		
 		<div class="posterright">
-			<img src="np_poster2.jpg" width="100%" class="poster">
+			<script type="text/javascript">
+				var total_images = 4;
+				var random_number = Math.floor((Math.random()*total_images));
+				var random_img = new Array();
+				random_img[0] = '<a href="page1.html"><img src="https://gira006.github.io/DES350/poster_animation.gif" width="100%"></a>';
+				random_img[1] = '<a href="page2.html"><img src="https://ahalam2.github.io/DES350/Yellowstone.gif" width="100%"></a>';
+				random_img[2] = '<a href="page3.html"><img src="https://donteking.github.io/DES350/AnimatedPoster.gif" width="100%"></a>';
+				random_img[3] = '<a href="page4.html"><img src="https://samorie.github.io/DES350/poster_final1.gif" width="100%"></a>';
+				random_img[4] = '<a href="page5.html"><img src="https://jmiran28.github.io/DES350/olympic-poster.gif" width="100%"></a>';
+				document.write(random_img[random_number]);
+</script>
 		</div>
 	</div>
 
